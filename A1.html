@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Space Invaders</title>
+		
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	</head>
+		<style>
+			canvas {
+				border: 1px solid black;
+				background-color: black;
+			}
+			p {
+				margin: 0px;
+				font-size: medium;
+			}
+			h1 {
+				font-size: large;
+				margin: 0px;
+			}
+			.instruction {
+				background-color: AliceBlue;
+				padding: 1px;
+			}
+			.figure {
+				float: left;
+				background-color: Cornsilk;
+				padding: 10px;
+			}
+			ul li {
+				display: inline;
+				padding-right: 10px;
+			}
+			.i1 {
+				color: red;
+			}
+			.i2 {
+				color: blue;
+			}
+			.i3 {
+				color: firebrick;
+			}
+			.i4 {
+				color: crimson;
+			}
+			#invaders {
+				color: red;
+			}
+			#score {
+				color: red;
+			}
+			#stage {
+				color: red;
+			}
+			#life {
+				color: red;
+			}
+		</style>
+		
+	<body>
+		<div class = "instruction">
+			<ul>
+			<h1>Game Instruction</h1>
+			<li>Press <span class="i1">Enter</span> to start</li>
+			<li>Use <span class="i2">Arrow Keys</span> to move</li>
+			<li>Press <span class="i3">Space Bar</span> to fire</li>
+			<li>Press <span class="i4">Backspace</span> to restart</li>
+			</ul>
+		</div>
+		<div class="figure">
+			<p>Invaders left:</p>
+			<p id="invaders">0</p> 
+			<p>Score:</p>
+			<p id="score">0</p>
+			<p>Stage:</p>
+			<p id="stage">0</p>
+			<p>Life:</p>
+			<p id="life">0</p>
+		</div>
+		<script src="A1.js"></script>
+	</body>
+</html>
